@@ -1,0 +1,51 @@
+product_id,brand,model,type,year,color,distance
+1,Toyota,Toyota Yaris,Hatchback,2016,Biru dongker,30000
+2,Toyota,Toyota Yaris,Hatchback,2018,Merah marun,35000
+3,Toyota,Toyota Yaris,Hatchback,2014,Jingga,80000
+4,Toyota,Toyota Yaris,Hatchback,2020,Biru laut,20000
+5,Toyota,Toyota Yaris,Hatchback,2012,Biru laut,25000
+6,Toyota,Toyota Agya,Hatchback,2019,Abu-abu,70000
+7,Toyota,Toyota Agya,Hatchback,2014,Biru laut,55000
+8,Toyota,Toyota Agya,Hatchback,2016,Hijau,30000
+9,Toyota,Toyota Agya,Hatchback,2022,Hijau tua,60000
+10,Toyota,Toyota Agya,Hatchback,2017,Merah,55000
+11,Toyota,Toyota Calya,Wagon,2019,Nila,45000
+12,Toyota,Toyota Calya,Wagon,2019,Perak,25000
+13,Toyota,Toyota Calya,Wagon,2017,Hijau tua,40000
+14,Toyota,Toyota Calya,Wagon,2016,Merah,85000
+15,Toyota,Toyota Calya,Wagon,2016,Hitam,20000
+16,Daihatsu,Daihatsu Ayla,Hatchback,2016,Jingga,95000
+17,Daihatsu,Daihatsu Ayla,Hatchback,2019,Coklat,100000
+18,Daihatsu,Daihatsu Ayla,Hatchback,2015,Koral,85000
+19,Daihatsu,Daihatsu Ayla,Hatchback,2017,Ungu,70000
+20,Daihatsu,Daihatsu Ayla,Hatchback,2017,Coklat,25000
+21,Daihatsu,Daihatsu Terios,SUV,2018,Hijau,30000
+22,Daihatsu,Daihatsu Terios,SUV,2022,Zaitun,45000
+23,Daihatsu,Daihatsu Terios,SUV,2019,Zaitun,95000
+24,Daihatsu,Daihatsu Terios,SUV,2017,Jingga,95000
+25,Daihatsu,Daihatsu Terios,SUV,2018,Hijau tua,35000
+26,Daihatsu,Daihatsu Xenia,MPV,2019,Putih,85000
+27,Daihatsu,Daihatsu Xenia,MPV,2022,Zaitun,95000
+28,Daihatsu,Daihatsu Xenia,MPV,2017,Merah bata,100000
+29,Daihatsu,Daihatsu Xenia,MPV,2014,Magenta,80000
+30,Daihatsu,Daihatsu Xenia,MPV,2018,Zaitun,25000
+31,Honda,Honda Jazz,Hatchback,2018,Coklat,75000
+32,Honda,Honda Jazz,Hatchback,2019,Biru,95000
+33,Honda,Honda Jazz,Hatchback,2018,Merah bata,45000
+34,Honda,Honda Jazz,Hatchback,2015,Merah bata,25000
+35,Honda,Honda Jazz,Hatchback,2013,Hitam,35000
+36,Honda,Honda CR-V,SUV,2018,Emas,95000
+37,Honda,Honda CR-V,SUV,2017,Biru laut,45000
+38,Honda,Honda CR-V,SUV,2009,Coklat,25000
+39,Honda,Honda CR-V,SUV,2016,Zaitun,40000
+40,Honda,Honda CR-V,SUV,2018,Biru laut,25000
+41,Honda,Honda Civic,Hatchback,2018,Biru muda,95000
+42,Honda,Honda Civic,Sedan,2010,Ungu,25000
+43,Honda,Honda Civic,Sedan,2013,Hijau tua,55000
+44,Honda,Honda Civic,Sedan,2013,Coklat tua,35000
+45,Honda,Honda Civic,Hatchback,2019,Merah,55000
+46,Suzuki,Suzuki Ertiga,MPV,2015,Kuning,30000
+47,Suzuki,Suzuki Ertiga,MPV,2018,Merah marun,40000
+48,Suzuki,Suzuki Ertiga,MPV,2016,Jingga,90000
+49,Suzuki,Suzuki Ertiga,MPV,2012,Nila,60000
+50,Suzuki,Suzuki Ertiga,MPV,2018,Magenta,60000

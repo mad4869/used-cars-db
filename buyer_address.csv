@@ -1,0 +1,451 @@
+buyer_address_id,buyer_id,city_id,address,zip_code
+1,136,1375,"Jl. Sentot Alibasa No. 9
+Kupang",55870
+2,75,3173,"Gang Soekarno Hatta No. 939
+Bengkulu",22009
+3,177,6471,"Gang Dipatiukur No. 23
+Makassar",17409
+4,176,5171,"Jalan Ronggowarsito No. 08
+Kota Administrasi Jakarta Barat",82161
+5,167,6471,"Gg. Siliwangi No. 576
+Kota Administrasi Jakarta Timur",57283
+6,26,3175,"Jalan Pasirkoja No. 11
+Bima",39574
+7,18,7371,"Jalan H.J Maemunah No. 047
+Pekanbaru",87222
+8,164,1371,"Gg. K.H. Wahid Hasyim No. 7
+Pekalongan",46190
+9,196,3578,"Gang Rajiman No. 5
+Sukabumi",59885
+10,4,3174,"Gg. Medokan Ayu No. 46
+Surakarta",91610
+11,67,3173,"Jalan Yos Sudarso No. 632
+Salatiga",77708
+12,119,3573,"Jl. Gegerkalong Hilir No. 1
+Gorontalo",62311
+13,174,3171,"Jl. Rajawali Barat No. 2
+Tidore Kepulauan",88118
+14,101,7371,"Gang Gedebage Selatan No. 51
+Bitung",49277
+15,69,3174,"Jl. Cikapayang No. 12
+Semarang",93468
+16,143,6471,"Jalan Yos Sudarso No. 405
+Pangkalpinang",55348
+17,78,3172,"Jl. Kutisari Selatan No. 8
+Blitar",11551
+18,199,3573,"Jl. Dr. Djunjunan No. 1
+Tangerang",48383
+19,183,6472,"Jalan Pelajar Pejuang No. 406
+Banjarmasin",34037
+20,149,5171,"Jalan Ahmad Yani No. 7
+Makassar",99119
+21,138,3173,"Gang Antapani Lama No. 256
+Langsa",19982
+22,96,3273,"Gang Rawamangun No. 3
+Banjar",92654
+23,115,6471,"Gg. Antapani Lama No. 39
+Kota Administrasi Jakarta Utara",03314
+24,99,3578,"Jl. M.T Haryono No. 17
+Makassar",37252
+25,106,3173,"Gg. Peta No. 275
+Pematangsiantar",14283
+26,74,6471,"Gg. Ahmad Dahlan No. 235
+Pariaman",28406
+27,152,3273,"Gang Moch. Toha No. 05
+Tegal",61446
+28,24,3578,"Gang Jakarta No. 639
+Bau-Bau",73119
+29,162,3573,"Gg. Sukabumi No. 5
+Sibolga",46472
+30,183,3171,"Gg. Setiabudhi No. 03
+Pekalongan",29776
+31,66,6471,"Jl. PHH. Mustofa No. 21
+Tasikmalaya",45191
+32,14,3171,"Gg. Suniaraja No. 93
+Padang",46139
+33,94,6472,"Gang Ciwastra No. 70
+Probolinggo",55448
+34,103,1375,"Gang Kutisari Selatan No. 62
+Pontianak",70024
+35,172,3171,"Gang Soekarno Hatta No. 08
+Palu",64845
+36,8,1375,"Gg. Siliwangi No. 259
+Tegal",64951
+37,52,3173,"Gg. Merdeka No. 7
+Bima",09787
+38,191,1375,"Jalan R.E Martadinata No. 149
+Surakarta",98979
+39,81,3174,"Jalan Cempaka No. 178
+Tegal",38424
+40,81,7371,"Jalan Indragiri No. 960
+Sawahlunto",20961
+41,155,7371,"Gg. Erlangga No. 04
+Pekanbaru",48147
+42,191,3175,"Gg. H.J Maemunah No. 181
+Padang",97660
+43,103,6472,"Gang Abdul Muis No. 505
+Dumai",48699
+44,184,3171,"Jl. S. Parman No. 393
+Yogyakarta",07926
+45,62,3172,"Gg. Pelajar Pejuang No. 1
+Surakarta",70690
+46,129,3172,"Gg. Kiaracondong No. 5
+Samarinda",44265
+47,119,3273,"Gang Pasir Koja No. 4
+Probolinggo",28811
+48,187,5171,"Jalan Jayawijaya No. 993
+Tarakan",70598
+49,58,3172,"Jl. Sukabumi No. 2
+Bekasi",24737
+50,116,3173,"Jl. Gedebage Selatan No. 462
+Pasuruan",08541
+51,40,3172,"Jl. BKR No. 2
+Pangkalpinang",69477
+52,49,3174,"Gg. Erlangga No. 4
+Kupang",78138
+53,93,3171,"Gg. Joyoboyo No. 02
+Tangerang Selatan",24835
+54,123,1371,"Jl. K.H. Wahid Hasyim No. 041
+Tomohon",63595
+55,93,3174,"Jl. Sukajadi No. 04
+Sabang",36691
+56,26,1371,"Gang Jend. A. Yani No. 04
+Batam",62800
+57,21,3471,"Jl. Dipatiukur No. 8
+Bau-Bau",28450
+58,200,3172,"Jl. Ahmad Dahlan No. 9
+Cimahi",27920
+59,61,3471,"Gang Asia Afrika No. 562
+Manado",95818
+60,19,7371,"Gg. Rajiman No. 00
+Surabaya",89162
+61,89,3174,"Jl. Raya Ujungberung No. 375
+Mataram",31651
+62,45,3471,"Jl. Dipatiukur No. 0
+Sawahlunto",91234
+63,35,3172,"Jl. Cihampelas No. 3
+Tidore Kepulauan",08374
+64,135,3573,"Jalan Gegerkalong Hilir No. 95
+Padang Sidempuan",25359
+65,67,3578,"Jalan Tebet Barat Dalam No. 04
+Jayapura",82758
+66,12,3171,"Gang Sukabumi No. 80
+Solok",05232
+67,22,3171,"Gang PHH. Mustofa No. 0
+Palangkaraya",50659
+68,41,5171,"Jalan BKR No. 45
+Sorong",17848
+69,92,6472,"Gang Pasirkoja No. 5
+Tanjungbalai",20830
+70,169,3573,"Jl. Rajawali Barat No. 459
+Bogor",51914
+71,15,7371,"Jl. Kutisari Selatan No. 487
+Palu",48272
+72,164,1371,"Gg. Wonoayu No. 673
+Kediri",95365
+73,54,3171,"Gg. Rajawali Timur No. 0
+Kupang",85247
+74,51,3273,"Jl. Medokan Ayu No. 557
+Dumai",67089
+75,32,3172,"Jalan Ciwastra No. 734
+Cilegon",51157
+76,84,7371,"Jl. Tubagus Ismail No. 647
+Tasikmalaya",99692
+77,113,3173,"Jl. Merdeka No. 0
+Lhokseumawe",53399
+78,143,1375,"Gang Kutai No. 2
+Banjar",45765
+79,185,3578,"Gg. Jend. Sudirman No. 16
+Pariaman",81479
+80,11,3573,"Gang Rawamangun No. 26
+Dumai",38175
+81,80,3171,"Gg. Dr. Djunjunan No. 1
+Banda Aceh",69235
+82,67,3175,"Jl. Peta No. 09
+Tangerang",99356
+83,149,3173,"Jl. Rungkut Industri No. 50
+Pagaralam",82149
+84,152,1375,"Gg. Kendalsari No. 250
+Kupang",65293
+85,60,1375,"Jl. Pasirkoja No. 27
+Banjar",67770
+86,191,6472,"Gg. Kutai No. 4
+Singkawang",05389
+87,103,3578,"Gg. Laswi No. 902
+Depok",40251
+88,80,3273,"Jalan PHH. Mustofa No. 8
+Pekalongan",54521
+89,11,3273,"Gang Dipenogoro No. 748
+Kota Administrasi Jakarta Utara",07860
+90,8,3578,"Gang Dipatiukur No. 498
+Pariaman",77069
+91,198,3471,"Gang KH Amin Jasuta No. 13
+Langsa",66592
+92,191,3573,"Jl. Cihampelas No. 91
+Kota Administrasi Jakarta Timur",41716
+93,10,3175,"Jalan Dr. Djunjunan No. 916
+Bogor",53403
+94,141,3173,"Gg. Stasiun Wonokromo No. 100
+Magelang",75365
+95,162,3173,"Jalan Laswi No. 2
+Bogor",29760
+96,103,3174,"Gang S. Parman No. 347
+Kediri",18369
+97,148,3171,"Jl. Antapani Lama No. 17
+Banda Aceh",60828
+98,114,3173,"Gang Astana Anyar No. 6
+Jambi",75482
+99,94,6471,"Gang M.T Haryono No. 92
+Balikpapan",70873
+100,32,6471,"Jl. Suniaraja No. 32
+Tomohon",56147
+101,16,5171,"Jalan Tubagus Ismail No. 68
+Tanjungpinang",46786
+102,122,3573,"Jl. Rungkut Industri No. 492
+Tarakan",07748
+103,136,1371,"Gang Gedebage Selatan No. 9
+Sawahlunto",68105
+104,97,1375,"Jl. Pasteur No. 145
+Purwokerto",78632
+105,159,5171,"Jalan Rungkut Industri No. 086
+Kota Administrasi Jakarta Barat",07759
+106,197,3578,"Gang Pasirkoja No. 153
+Madiun",70636
+107,109,6472,"Jalan Abdul Muis No. 092
+Serang",70903
+108,164,1371,"Jl. Monginsidi No. 3
+Padang",04744
+109,172,3175,"Gang Pasirkoja No. 9
+Jayapura",65994
+110,154,3578,"Jl. H.J Maemunah No. 8
+Pontianak",13922
+111,103,6472,"Jl. Kiaracondong No. 594
+Banda Aceh",58510
+112,141,3172,"Gang Veteran No. 701
+Makassar",40510
+113,99,3171,"Jl. Cihampelas No. 3
+Subulussalam",17578
+114,141,3273,"Jalan Cihampelas No. 4
+Pangkalpinang",53274
+115,79,1375,"Jalan Dipatiukur No. 667
+Bima",91426
+116,59,3174,"Jl. M.H Thamrin No. 38
+Payakumbuh",56711
+117,51,3174,"Jalan Stasiun Wonokromo No. 889
+Payakumbuh",69896
+118,47,6472,"Gang HOS. Cokroaminoto No. 173
+Batu",96551
+119,78,7371,"Jl. Ahmad Dahlan No. 5
+Parepare",91008
+120,146,6472,"Gang Peta No. 570
+Tangerang Selatan",35066
+121,127,3578,"Jalan Dipenogoro No. 0
+Pekanbaru",42479
+122,162,3578,"Jl. Veteran No. 401
+Bontang",16544
+123,170,3172,"Gg. Soekarno Hatta No. 77
+Semarang",80485
+124,6,3573,"Jl. Jamika No. 631
+Jambi",40641
+125,106,3175,"Jl. Cikutra Timur No. 3
+Bitung",20453
+126,60,3171,"Gg. Stasiun Wonokromo No. 600
+Yogyakarta",13489
+127,51,1371,"Gg. M.H Thamrin No. 62
+Salatiga",15812
+128,53,3471,"Jalan Jend. A. Yani No. 106
+Kotamobagu",06681
+129,37,5171,"Jalan Tubagus Ismail No. 238
+Bontang",16621
+130,150,7371,"Gang Abdul Muis No. 63
+Sabang",01300
+131,31,3573,"Gg. R.E Martadinata No. 936
+Tangerang",26128
+132,69,6471,"Jl. Pelajar Pejuang No. 79
+Cilegon",87946
+133,83,1371,"Gang BKR No. 28
+Meulaboh",68754
+134,64,7371,"Gang Ir. H. Djuanda No. 3
+Pasuruan",91772
+135,78,3174,"Jl. Rawamangun No. 34
+Sabang",79286
+136,192,3173,"Jl. BKR No. 6
+Tanjungpinang",04356
+137,188,3173,"Jl. Dr. Djunjunan No. 7
+Tanjungbalai",45735
+138,79,1375,"Jl. Cikutra Timur No. 542
+Madiun",15401
+139,119,3173,"Gg. Dipatiukur No. 1
+Sukabumi",80067
+140,151,3471,"Gg. Ciwastra No. 725
+Pematangsiantar",71721
+141,3,3172,"Jalan Stasiun Wonokromo No. 066
+Palembang",70379
+142,24,3175,"Jl. Pasirkoja No. 448
+Pematangsiantar",58367
+143,149,6471,"Gang Dipatiukur No. 44
+Bukittinggi",05419
+144,11,3174,"Jl. Medokan Ayu No. 5
+Palu",01424
+145,176,5171,"Jalan Medokan Ayu No. 71
+Dumai",43611
+146,189,3175,"Gg. Moch. Ramdan No. 78
+Kupang",43124
+147,127,3573,"Gg. Bangka Raya No. 6
+Kotamobagu",65600
+148,121,3573,"Jalan Gedebage Selatan No. 157
+Banda Aceh",56740
+149,70,3173,"Jalan Pasir Koja No. 473
+Pasuruan",80955
+150,98,3471,"Jl. Jend. A. Yani No. 946
+Padang",58968
+151,110,3273,"Jl. Kutai No. 0
+Padang Sidempuan",10579
+152,20,3471,"Gang Erlangga No. 067
+Kendari",32928
+153,186,3174,"Gg. K.H. Wahid Hasyim No. 077
+Tegal",86897
+154,154,3578,"Gg. Laswi No. 269
+Makassar",74289
+155,73,6472,"Jl. Rajawali Barat No. 9
+Kendari",98624
+156,20,1371,"Gg. Ahmad Yani No. 7
+Samarinda",05687
+157,176,3471,"Jl. Pasir Koja No. 355
+Prabumulih",65116
+158,158,3273,"Gg. Jend. Sudirman No. 6
+Banjarmasin",02076
+159,27,1375,"Gang Rajawali Barat No. 966
+Banjarmasin",17898
+160,122,3573,"Jalan Rungkut Industri No. 5
+Padang",92160
+161,96,3174,"Jl. Joyoboyo No. 555
+Sibolga",99917
+162,116,3174,"Jalan Antapani Lama No. 97
+Ambon",28207
+163,101,3573,"Gang Kiaracondong No. 743
+Tangerang",04115
+164,50,3172,"Jl. Pacuan Kuda No. 88
+Cimahi",12584
+165,96,5171,"Gang Peta No. 3
+Palu",61234
+166,41,3175,"Gg. Tubagus Ismail No. 954
+Bontang",87784
+167,36,1375,"Gang Ahmad Yani No. 5
+Padang",32238
+168,124,3173,"Jalan Cikutra Timur No. 01
+Tangerang Selatan",08087
+169,175,3175,"Gg. Rajawali Timur No. 821
+Palembang",92394
+170,177,3573,"Gg. Merdeka No. 35
+Tegal",70466
+171,30,3172,"Jl. Lembong No. 46
+Pekanbaru",84636
+172,191,1371,"Jl. Ciumbuleuit No. 920
+Lubuklinggau",94096
+173,99,3175,"Gg. Pelajar Pejuang No. 7
+Kendari",71466
+174,103,1375,"Jalan Ahmad Yani No. 748
+Bandung",28182
+175,132,6471,"Jl. Siliwangi No. 8
+Bandung",19803
+176,188,6472,"Gang Soekarno Hatta No. 3
+Padang Sidempuan",11476
+177,81,7371,"Gg. Gardujati No. 964
+Bengkulu",69893
+178,172,6471,"Jl. H.J Maemunah No. 1
+Ambon",20202
+179,168,3175,"Gg. Wonoayu No. 350
+Medan",87182
+180,145,1375,"Gang Ciumbuleuit No. 18
+Bontang",90555
+181,39,5171,"Gang Raya Ujungberung No. 0
+Serang",57994
+182,163,3172,"Gg. H.J Maemunah No. 84
+Palangkaraya",40946
+183,193,3172,"Jl. Soekarno Hatta No. 008
+Bau-Bau",33262
+184,97,3175,"Jalan Kutisari Selatan No. 5
+Sabang",21735
+185,126,6471,"Jl. Stasiun Wonokromo No. 57
+Cirebon",22213
+186,118,3273,"Jalan Pasteur No. 3
+Sorong",47644
+187,153,6472,"Jl. Ronggowarsito No. 4
+Tegal",23168
+188,120,6472,"Gang Cikutra Barat No. 3
+Ternate",74703
+189,168,6471,"Jalan Sadang Serang No. 446
+Madiun",14358
+190,40,3171,"Jalan M.T Haryono No. 2
+Kota Administrasi Jakarta Pusat",47947
+191,24,3573,"Gg. Gardujati No. 442
+Bitung",74013
+192,98,6472,"Jl. Gedebage Selatan No. 9
+Probolinggo",69535
+193,199,3173,"Gang Asia Afrika No. 23
+Pekalongan",48891
+194,122,3171,"Jl. Kutai No. 36
+Ambon",24825
+195,50,3175,"Jalan Dipatiukur No. 7
+Lubuklinggau",98568
+196,191,1371,"Jl. Gardujati No. 986
+Kota Administrasi Jakarta Selatan",51848
+197,48,6472,"Gang Rajawali Timur No. 490
+Ternate",11524
+198,33,6471,"Gang Rumah Sakit No. 503
+Lubuklinggau",54674
+199,171,3273,"Gang Antapani Lama No. 875
+Kota Administrasi Jakarta Utara",04523
+200,31,7371,"Gg. Antapani Lama No. 9
+Palangkaraya",39700
+201,18,1371,"Gang Gardujati No. 87
+Kota Administrasi Jakarta Selatan",30234
+202,157,3172,"Jalan Gegerkalong Hilir No. 581
+Bukittinggi",55425
+203,170,7371,"Gang Stasiun Wonokromo No. 4
+Batu",27619
+204,109,3273,"Gg. Lembong No. 209
+Lubuklinggau",85483
+205,152,1375,"Jl. Wonoayu No. 16
+Sukabumi",32247
+206,153,5171,"Jl. Pacuan Kuda No. 35
+Tual",30937
+207,70,6471,"Gg. Ahmad Yani No. 53
+Tanjungpinang",37018
+208,63,3171,"Gang Jayawijaya No. 24
+Batam",00663
+209,64,7371,"Gg. M.T Haryono No. 459
+Serang",88979
+210,126,3578,"Gang Ahmad Yani No. 452
+Samarinda",46643
+211,42,3273,"Jalan Jend. A. Yani No. 717
+Pekanbaru",42183
+212,53,3173,"Jalan Lembong No. 7
+Probolinggo",42675
+213,73,3471,"Gang Yos Sudarso No. 372
+Metro",86050
+214,171,7371,"Gang Kutai No. 520
+Padang Sidempuan",22490
+215,174,3578,"Jl. R.E Martadinata No. 4
+Tangerang Selatan",49289
+216,80,6471,"Gg. Jakarta No. 67
+Sawahlunto",40709
+217,2,3172,"Jl. R.E Martadinata No. 6
+Denpasar",80103
+218,121,3171,"Gg. Dipatiukur No. 4
+Bandar Lampung",39497
+219,47,3273,"Jl. Sukabumi No. 4
+Ternate",00160
+220,169,3171,"Gg. Ir. H. Djuanda No. 1
+Padang Sidempuan",61817
+221,80,3174,"Jalan KH Amin Jasuta No. 6
+Magelang",66634
+222,43,3175,"Gang Jakarta No. 46
+Bontang",46534
+223,194,6472,"Gg. Ciumbuleuit No. 8
+Sorong",81790
+224,138,3172,"Gg. Cikutra Timur No. 08
+Medan",57719
+225,163,3573,"Gg. Ir. H. Djuanda No. 958
+Tanjungpinang",01061
