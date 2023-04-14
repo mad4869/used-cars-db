@@ -45,7 +45,7 @@
     
     -- No.3
 	-- Melihat semua mobil yang dijual 1 akun dari yang paling baru
-	-- Akun "Nadine Setiawan", seller_id = 11	
+	-- Akun "Dodo Mahendra", seller_id = 11	
 	SELECT 
 		product_id, 
 		brand, 
@@ -185,7 +185,7 @@
     
     -- No. 3
     -- Perbandingan tanggal user melakukan bid dengan bid selanjutnya beserta harga tawar
-    -- Bid untuk model mobil "Daihatsu Terios"
+    -- Bid untuk model mobil "Toyota Yaris"
     SELECT 
         model,
         buyer_id,
@@ -202,7 +202,7 @@
         products
         USING(product_id)
     WHERE
-        model = 'Daihatsu Terios'
+        model = 'Toyota Yaris'
     ORDER BY
         3 ASC
     
@@ -232,8 +232,8 @@
     
     -- No. 5
     -- Window function rata-rata harga bid merk dan model mobil selama 6 bulan terakhir
-    -- Model mobil = "Daihatsu Terios"
-    WITH bids_terios AS (	
+    -- Model mobil = "Toyota Yaris"
+    WITH bids_yaris AS (	
 	SELECT
 		brand,
 		model,
@@ -248,22 +248,22 @@
         products
         USING(product_id)
 	WHERE
-		model = 'Daihatsu Terios'
+		model = 'Toyota Yaris'
 	)
 	SELECT
 		DISTINCT brand,
 		model,
-		COALESCE((SELECT AVG(amount) FROM bids_terios 
-                WHERE created_at >= CURRENT_TIMESTAMP - interval '6 months'), 0) AS m_min_6,
-		COALESCE((SELECT AVG(amount) FROM bids_terios 
-                WHERE created_at >= CURRENT_TIMESTAMP - interval '5 months'), 0) AS m_min_5,
-		COALESCE((SELECT AVG(amount) FROM bids_terios 
-                WHERE created_at >= CURRENT_TIMESTAMP - interval '4 months'), 0) AS m_min_4,
-		COALESCE((SELECT AVG(amount) FROM bids_terios 
-                WHERE created_at >= CURRENT_TIMESTAMP - interval '3 months'), 0) AS m_min_3,
-		COALESCE((SELECT AVG(amount) FROM bids_terios 
-                WHERE created_at >= CURRENT_TIMESTAMP - interval '2 months'), 0) AS m_min_2,
-		COALESCE((SELECT AVG(amount) FROM bids_terios 
-                WHERE created_at >= CURRENT_TIMESTAMP - interval '1 months'), 0) AS m_min_1
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '6 months') AS m_min_6,
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '5 months') AS m_min_5,
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '4 months') AS m_min_4,
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '3 months') AS m_min_3,
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '2 months') AS m_min_2,
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '1 months') AS m_min_1
 	FROM
-		bids_terios
+		bids_yaris

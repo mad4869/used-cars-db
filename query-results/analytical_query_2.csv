@@ -1,109 +1,90 @@
 "nama_kota","brand","model","year","price","avg_car_city"
-"Kota Surabaya","Toyota","Toyota Yaris",2016,160000000,328000000.00000000
-"Kota Surabaya","Daihatsu","Daihatsu Xenia",2014,210000000,328000000.00000000
-"Kota Surabaya","Daihatsu","Daihatsu Xenia",2014,210000000,328000000.00000000
-"Kota Surabaya","Toyota","Toyota Calya",2019,480000000,328000000.00000000
-"Kota Surabaya","Daihatsu","Daihatsu Xenia",2022,580000000,328000000.00000000
-"Kota Padang","Suzuki","Suzuki Ertiga",2016,200000000,386250000.00000000
-"Kota Padang","Honda","Honda Civic",2010,200000000,386250000.00000000
-"Kota Padang","Daihatsu","Daihatsu Xenia",2018,330000000,386250000.00000000
-"Kota Padang","Toyota","Toyota Yaris",2018,420000000,386250000.00000000
-"Kota Padang","Suzuki","Suzuki Ertiga",2018,440000000,386250000.00000000
-"Kota Padang","Suzuki","Suzuki Ertiga",2018,440000000,386250000.00000000
-"Kota Padang","Toyota","Toyota Calya",2019,480000000,386250000.00000000
-"Kota Padang","Daihatsu","Daihatsu Xenia",2022,580000000,386250000.00000000
-"Kota Balikpapan","Daihatsu","Daihatsu Xenia",2018,110000000,415714285.71428571
-"Kota Balikpapan","Suzuki","Suzuki Ertiga",2012,130000000,415714285.71428571
-"Kota Balikpapan","Honda","Honda Jazz",2015,250000000,415714285.71428571
-"Kota Balikpapan","Toyota","Toyota Yaris",2016,470000000,415714285.71428571
-"Kota Balikpapan","Honda","Honda Civic",2010,570000000,415714285.71428571
-"Kota Balikpapan","Honda","Honda CR-V",2016,640000000,415714285.71428571
-"Kota Balikpapan","Toyota","Toyota Calya",2019,740000000,415714285.71428571
-"Kota Denpasar","Daihatsu","Daihatsu Xenia",2018,110000000,422000000.00000000
-"Kota Denpasar","Suzuki","Suzuki Ertiga",2016,200000000,422000000.00000000
-"Kota Denpasar","Honda","Honda Jazz",2015,250000000,422000000.00000000
-"Kota Denpasar","Daihatsu","Daihatsu Xenia",2014,270000000,422000000.00000000
-"Kota Denpasar","Toyota","Toyota Yaris",2018,420000000,422000000.00000000
-"Kota Denpasar","Honda","Honda Jazz",2018,430000000,422000000.00000000
-"Kota Denpasar","Honda","Honda CR-V",2018,500000000,422000000.00000000
-"Kota Denpasar","Daihatsu","Daihatsu Xenia",2017,590000000,422000000.00000000
-"Kota Denpasar","Honda","Honda CR-V",2018,700000000,422000000.00000000
-"Kota Denpasar","Honda","Honda Civic",2010,750000000,422000000.00000000
-"Kota Jakarta Utara","Toyota","Toyota Yaris",2016,160000000,442500000.00000000
-"Kota Jakarta Utara","Toyota","Toyota Agya",2019,410000000,442500000.00000000
-"Kota Jakarta Utara","Daihatsu","Daihatsu Xenia",2014,470000000,442500000.00000000
-"Kota Jakarta Utara","Honda","Honda Civic",2010,730000000,442500000.00000000
-"Kota Yogyakarta","Toyota","Toyota Calya",2016,100000000,470000000.00000000
-"Kota Yogyakarta","Suzuki","Suzuki Ertiga",2018,170000000,470000000.00000000
-"Kota Yogyakarta","Suzuki","Suzuki Ertiga",2012,640000000,470000000.00000000
-"Kota Yogyakarta","Toyota","Toyota Agya",2016,710000000,470000000.00000000
-"Kota Yogyakarta","Daihatsu","Daihatsu Xenia",2019,730000000,470000000.00000000
-"Kota Samarinda","Honda","Honda CR-V",2018,110000000,494000000.00000000
-"Kota Samarinda","Honda","Honda CR-V",2016,490000000,494000000.00000000
-"Kota Samarinda","Toyota","Toyota Agya",2022,560000000,494000000.00000000
-"Kota Samarinda","Toyota","Toyota Agya",2022,560000000,494000000.00000000
-"Kota Samarinda","Honda","Honda Civic",2010,750000000,494000000.00000000
-"Kota Bandung","Toyota","Toyota Yaris",2012,140000000,496000000.00000000
-"Kota Bandung","Toyota","Toyota Yaris",2016,160000000,496000000.00000000
-"Kota Bandung","Honda","Honda Civic",2010,200000000,496000000.00000000
-"Kota Bandung","Suzuki","Suzuki Ertiga",2015,290000000,496000000.00000000
-"Kota Bandung","Daihatsu","Daihatsu Xenia",2018,330000000,496000000.00000000
-"Kota Bandung","Honda","Honda Civic",2013,390000000,496000000.00000000
-"Kota Bandung","Honda","Honda Civic",2013,390000000,496000000.00000000
-"Kota Bandung","Toyota","Toyota Agya",2019,410000000,496000000.00000000
-"Kota Bandung","Suzuki","Suzuki Ertiga",2012,640000000,496000000.00000000
-"Kota Bandung","Toyota","Toyota Agya",2016,710000000,496000000.00000000
-"Kota Bandung","Daihatsu","Daihatsu Xenia",2019,730000000,496000000.00000000
-"Kota Bandung","Daihatsu","Daihatsu Xenia",2022,750000000,496000000.00000000
-"Kota Bandung","Daihatsu","Daihatsu Xenia",2022,750000000,496000000.00000000
-"Kota Bandung","Daihatsu","Daihatsu Terios",2022,760000000,496000000.00000000
-"Kota Bandung","Daihatsu","Daihatsu Terios",2019,790000000,496000000.00000000
-"Kota Bukittinggi","Honda","Honda Jazz",2018,430000000,522500000.00000000
-"Kota Bukittinggi","Suzuki","Suzuki Ertiga",2018,440000000,522500000.00000000
-"Kota Bukittinggi","Daihatsu","Daihatsu Xenia",2018,450000000,522500000.00000000
-"Kota Bukittinggi","Honda","Honda Civic",2013,770000000,522500000.00000000
-"Kota Malang","Toyota","Toyota Calya",2019,480000000,530000000.00000000
-"Kota Malang","Toyota","Toyota Calya",2019,480000000,530000000.00000000
-"Kota Malang","Daihatsu","Daihatsu Xenia",2022,580000000,530000000.00000000
-"Kota Malang","Daihatsu","Daihatsu Xenia",2022,580000000,530000000.00000000
-"Kota Jakarta Barat","Suzuki","Suzuki Ertiga",2018,170000000,538181818.18181818
-"Kota Jakarta Barat","Toyota","Toyota Yaris",2020,330000000,538181818.18181818
-"Kota Jakarta Barat","Honda","Honda Civic",2013,390000000,538181818.18181818
-"Kota Jakarta Barat","Toyota","Toyota Calya",2019,480000000,538181818.18181818
-"Kota Jakarta Barat","Daihatsu","Daihatsu Xenia",2014,560000000,538181818.18181818
-"Kota Jakarta Barat","Daihatsu","Daihatsu Xenia",2022,580000000,538181818.18181818
-"Kota Jakarta Barat","Daihatsu","Daihatsu Xenia",2017,590000000,538181818.18181818
-"Kota Jakarta Barat","Honda","Honda Jazz",2018,660000000,538181818.18181818
-"Kota Jakarta Barat","Toyota","Toyota Calya",2016,670000000,538181818.18181818
-"Kota Jakarta Barat","Toyota","Toyota Calya",2019,740000000,538181818.18181818
-"Kota Jakarta Barat","Daihatsu","Daihatsu Xenia",2022,750000000,538181818.18181818
-"Kota Jakarta Timur","Daihatsu","Daihatsu Xenia",2022,270000000,554285714.28571429
-"Kota Jakarta Timur","Daihatsu","Daihatsu Xenia",2014,270000000,554285714.28571429
-"Kota Jakarta Timur","Honda","Honda Civic",2018,450000000,554285714.28571429
-"Kota Jakarta Timur","Daihatsu","Daihatsu Ayla",2016,690000000,554285714.28571429
-"Kota Jakarta Timur","Honda","Honda CR-V",2018,700000000,554285714.28571429
-"Kota Jakarta Timur","Toyota","Toyota Calya",2019,740000000,554285714.28571429
-"Kota Jakarta Timur","Daihatsu","Daihatsu Terios",2022,760000000,554285714.28571429
-"Kota Makassar","Daihatsu","Daihatsu Terios",2017,160000000,597142857.14285714
-"Kota Makassar","Suzuki","Suzuki Ertiga",2018,440000000,597142857.14285714
-"Kota Makassar","Daihatsu","Daihatsu Terios",2017,620000000,597142857.14285714
-"Kota Makassar","Daihatsu","Daihatsu Terios",2018,690000000,597142857.14285714
-"Kota Makassar","Daihatsu","Daihatsu Xenia",2017,710000000,597142857.14285714
-"Kota Makassar","Honda","Honda Jazz",2018,780000000,597142857.14285714
-"Kota Makassar","Honda","Honda Jazz",2018,780000000,597142857.14285714
-"Kota Jakarta Pusat","Daihatsu","Daihatsu Ayla",2019,290000000,607000000.00000000
-"Kota Jakarta Pusat","Toyota","Toyota Yaris",2018,410000000,607000000.00000000
-"Kota Jakarta Pusat","Daihatsu","Daihatsu Xenia",2017,480000000,607000000.00000000
-"Kota Jakarta Pusat","Daihatsu","Daihatsu Xenia",2017,570000000,607000000.00000000
-"Kota Jakarta Pusat","Toyota","Toyota Yaris",2018,640000000,607000000.00000000
-"Kota Jakarta Pusat","Toyota","Toyota Yaris",2012,680000000,607000000.00000000
-"Kota Jakarta Pusat","Toyota","Toyota Calya",2016,700000000,607000000.00000000
-"Kota Jakarta Pusat","Honda","Honda CR-V",2009,730000000,607000000.00000000
-"Kota Jakarta Pusat","Daihatsu","Daihatsu Xenia",2022,780000000,607000000.00000000
-"Kota Jakarta Pusat","Daihatsu","Daihatsu Terios",2019,790000000,607000000.00000000
-"Kota Jakarta Selatan","Honda","Honda Jazz",2018,120000000,613333333.33333333
-"Kota Jakarta Selatan","Suzuki","Suzuki Ertiga",2012,640000000,613333333.33333333
-"Kota Jakarta Selatan","Toyota","Toyota Yaris",2012,680000000,613333333.33333333
-"Kota Jakarta Selatan","Toyota","Toyota Agya",2016,710000000,613333333.33333333
-"Kota Jakarta Selatan","Daihatsu","Daihatsu Xenia",2019,730000000,613333333.33333333
-"Kota Jakarta Selatan","Toyota","Toyota Agya",2017,800000000,613333333.33333333
+"Kota Jakarta Selatan","Toyota","Toyota Agya",2019,110000000,332000000.00000000
+"Kota Jakarta Selatan","Toyota","Toyota Yaris",2012,160000000,332000000.00000000
+"Kota Jakarta Selatan","Suzuki","Suzuki Ertiga",2018,390000000,332000000.00000000
+"Kota Jakarta Selatan","Toyota","Toyota Yaris",2018,420000000,332000000.00000000
+"Kota Jakarta Selatan","Toyota","Toyota Calya",2019,580000000,332000000.00000000
+"Kota Padang","Toyota","Toyota Calya",2019,180000000,382000000.00000000
+"Kota Padang","Toyota","Toyota Agya",2014,340000000,382000000.00000000
+"Kota Padang","Toyota","Toyota Agya",2014,340000000,382000000.00000000
+"Kota Padang","Daihatsu","Daihatsu Xenia",2017,520000000,382000000.00000000
+"Kota Padang","Honda","Honda Civic",2018,530000000,382000000.00000000
+"Kota Jakarta Barat","Toyota","Toyota Yaris",2018,320000000,410000000.00000000
+"Kota Jakarta Barat","Honda","Honda Jazz",2015,440000000,410000000.00000000
+"Kota Jakarta Barat","Toyota","Toyota Calya",2016,470000000,410000000.00000000
+"Kota Samarinda","Daihatsu","Daihatsu Xenia",2017,120000000,420000000.00000000
+"Kota Samarinda","Daihatsu","Daihatsu Xenia",2019,130000000,420000000.00000000
+"Kota Samarinda","Toyota","Toyota Agya",2019,180000000,420000000.00000000
+"Kota Samarinda","Daihatsu","Daihatsu Terios",2017,310000000,420000000.00000000
+"Kota Samarinda","Toyota","Toyota Yaris",2018,420000000,420000000.00000000
+"Kota Samarinda","Suzuki","Suzuki Ertiga",2016,570000000,420000000.00000000
+"Kota Samarinda","Toyota","Toyota Calya",2019,580000000,420000000.00000000
+"Kota Samarinda","Daihatsu","Daihatsu Xenia",2022,620000000,420000000.00000000
+"Kota Samarinda","Honda","Honda Jazz",2018,630000000,420000000.00000000
+"Kota Samarinda","Daihatsu","Daihatsu Terios",2019,640000000,420000000.00000000
+"Kota Denpasar","Toyota","Toyota Calya",2016,250000000,422500000.00000000
+"Kota Denpasar","Toyota","Toyota Yaris",2020,270000000,422500000.00000000
+"Kota Denpasar","Suzuki","Suzuki Ertiga",2018,390000000,422500000.00000000
+"Kota Denpasar","Daihatsu","Daihatsu Terios",2022,390000000,422500000.00000000
+"Kota Denpasar","Toyota","Toyota Yaris",2018,420000000,422500000.00000000
+"Kota Denpasar","Toyota","Toyota Agya",2017,520000000,422500000.00000000
+"Kota Denpasar","Honda","Honda CR-V",2016,560000000,422500000.00000000
+"Kota Denpasar","Toyota","Toyota Calya",2019,580000000,422500000.00000000
+"Kota Bukittinggi","Toyota","Toyota Agya",2019,180000000,433333333.33333333
+"Kota Bukittinggi","Daihatsu","Daihatsu Terios",2022,500000000,433333333.33333333
+"Kota Bukittinggi","Daihatsu","Daihatsu Xenia",2022,620000000,433333333.33333333
+"Kota Makassar","Toyota","Toyota Calya",2019,170000000,445714285.71428571
+"Kota Makassar","Honda","Honda Civic",2019,170000000,445714285.71428571
+"Kota Makassar","Toyota","Toyota Agya",2017,390000000,445714285.71428571
+"Kota Makassar","Suzuki","Suzuki Ertiga",2016,570000000,445714285.71428571
+"Kota Makassar","Suzuki","Suzuki Ertiga",2016,570000000,445714285.71428571
+"Kota Makassar","Suzuki","Suzuki Ertiga",2016,600000000,445714285.71428571
+"Kota Makassar","Daihatsu","Daihatsu Terios",2017,650000000,445714285.71428571
+"Kota Yogyakarta","Honda","Honda CR-V",2009,110000000,450000000.00000000
+"Kota Yogyakarta","Toyota","Toyota Agya",2017,390000000,450000000.00000000
+"Kota Yogyakarta","Toyota","Toyota Calya",2017,460000000,450000000.00000000
+"Kota Yogyakarta","Suzuki","Suzuki Ertiga",2016,600000000,450000000.00000000
+"Kota Yogyakarta","Honda","Honda CR-V",2018,690000000,450000000.00000000
+"Kota Balikpapan","Toyota","Toyota Calya",2016,250000000,455000000.00000000
+"Kota Balikpapan","Toyota","Toyota Agya",2014,280000000,455000000.00000000
+"Kota Balikpapan","Daihatsu","Daihatsu Terios",2017,310000000,455000000.00000000
+"Kota Balikpapan","Toyota","Toyota Agya",2014,400000000,455000000.00000000
+"Kota Balikpapan","Daihatsu","Daihatsu Terios",2017,440000000,455000000.00000000
+"Kota Balikpapan","Honda","Honda Jazz",2018,500000000,455000000.00000000
+"Kota Balikpapan","Daihatsu","Daihatsu Xenia",2017,520000000,455000000.00000000
+"Kota Balikpapan","Toyota","Toyota Agya",2014,550000000,455000000.00000000
+"Kota Balikpapan","Daihatsu","Daihatsu Terios",2017,620000000,455000000.00000000
+"Kota Balikpapan","Daihatsu","Daihatsu Ayla",2017,680000000,455000000.00000000
+"Kota Jakarta Utara","Toyota","Toyota Calya",2019,170000000,455714285.71428571
+"Kota Jakarta Utara","Toyota","Toyota Agya",2014,340000000,455714285.71428571
+"Kota Jakarta Utara","Toyota","Toyota Agya",2014,400000000,455714285.71428571
+"Kota Jakarta Utara","Toyota","Toyota Yaris",2018,500000000,455714285.71428571
+"Kota Jakarta Utara","Daihatsu","Daihatsu Xenia",2017,520000000,455714285.71428571
+"Kota Jakarta Utara","Honda","Honda CR-V",2018,580000000,455714285.71428571
+"Kota Jakarta Utara","Daihatsu","Daihatsu Ayla",2017,680000000,455714285.71428571
+"Kota Malang","Toyota","Toyota Agya",2019,110000000,478888888.88888889
+"Kota Malang","Honda","Honda CR-V",2009,200000000,478888888.88888889
+"Kota Malang","Daihatsu","Daihatsu Ayla",2019,270000000,478888888.88888889
+"Kota Malang","Honda","Honda CR-V",2017,470000000,478888888.88888889
+"Kota Malang","Honda","Honda Jazz",2013,540000000,478888888.88888889
+"Kota Malang","Daihatsu","Daihatsu Ayla",2017,570000000,478888888.88888889
+"Kota Malang","Daihatsu","Daihatsu Ayla",2017,570000000,478888888.88888889
+"Kota Malang","Honda","Honda Jazz",2013,790000000,478888888.88888889
+"Kota Malang","Honda","Honda Jazz",2013,790000000,478888888.88888889
+"Kota Surabaya","Toyota","Toyota Calya",2016,250000000,495000000.00000000
+"Kota Surabaya","Honda","Honda CR-V",2018,300000000,495000000.00000000
+"Kota Surabaya","Toyota","Toyota Agya",2017,390000000,495000000.00000000
+"Kota Surabaya","Suzuki","Suzuki Ertiga",2016,600000000,495000000.00000000
+"Kota Surabaya","Suzuki","Suzuki Ertiga",2018,690000000,495000000.00000000
+"Kota Surabaya","Honda","Honda Jazz",2015,740000000,495000000.00000000
+"Kota Jakarta Pusat","Daihatsu","Daihatsu Ayla",2019,270000000,523750000.00000000
+"Kota Jakarta Pusat","Toyota","Toyota Yaris",2018,420000000,523750000.00000000
+"Kota Jakarta Pusat","Honda","Honda CR-V",2017,470000000,523750000.00000000
+"Kota Jakarta Pusat","Daihatsu","Daihatsu Xenia",2017,520000000,523750000.00000000
+"Kota Jakarta Pusat","Honda","Honda Civic",2018,570000000,523750000.00000000
+"Kota Jakarta Pusat","Daihatsu","Daihatsu Ayla",2017,570000000,523750000.00000000
+"Kota Jakarta Pusat","Toyota","Toyota Calya",2019,580000000,523750000.00000000
+"Kota Jakarta Pusat","Honda","Honda Jazz",2013,790000000,523750000.00000000
+"Kota Jakarta Timur","Toyota","Toyota Agya",2014,400000000,526666666.66666667
+"Kota Jakarta Timur","Daihatsu","Daihatsu Terios",2022,500000000,526666666.66666667
+"Kota Jakarta Timur","Daihatsu","Daihatsu Ayla",2017,680000000,526666666.66666667

@@ -1,5 +1,6 @@
 from faker import Faker
 from datetime import datetime
+from show_data import show_data
 import random
 
 # membuat variabel untuk generator Faker dengan lokasi Indonesia
@@ -18,7 +19,7 @@ def create_seller_table(n_seller: int, is_print: bool):
         - n_seller (int): jumlah seller yang ingin dibuat
         - is_print (bool): jika True akan menampilkan hasil data
     return:
-        - table (dict): data dalam bentuk tabel
+        - seller (dict): data dalam bentuk tabel
     """
     # Membuat kolom-kolom tabel seller dengan masing-masing data dummy
     seller = {}
@@ -50,7 +51,7 @@ def create_buyer_table(n_buyer: int, is_print: bool):
         - n_buyer (int): jumlah buyer yang ingin dibuat
         - is_print (bool): jika True akan menampilkan hasil data
     return:
-        - table (dict): data dalam bentuk tabel
+        - buyer (dict): data dalam bentuk tabel
     """
     # Membuat kolom-kolom tabel buyer dengan masing-masing data dummy
     buyer = {}
@@ -69,7 +70,7 @@ def create_buyer_table(n_buyer: int, is_print: bool):
     
     return buyer
 
-def create_seller_address_table(n_seller_address: int, is_print: bool):
+def create_seller_address_table(seller: dict, city: dict, n_seller_address: int, is_print: bool):
     """
     Fungsi untuk membuat dummy data tabel seller_address
     headers:
@@ -79,10 +80,12 @@ def create_seller_address_table(n_seller_address: int, is_print: bool):
         - address
         - zip_code
     args:
+        - seller (dict): tabel seller
+        - city (dict): tabel city
         - n_seller_address (int): jumlah seller address yang ingin dibuat
         - is_print (bool): jika True akan menampilkan hasil data
     return:
-        - table (dict): data dalam bentuk tabel
+        - seller_address (dict): data dalam bentuk tabel
     """
     # Membuat kolom-kolom tabel seller_address dengan masing-masing data dummy
     seller_address = {}
@@ -98,7 +101,7 @@ def create_seller_address_table(n_seller_address: int, is_print: bool):
     
     return seller_address
 
-def create_buyer_address_table(n_buyer_address: int, is_print: bool):
+def create_buyer_address_table(buyer: dict, city: dict, n_buyer_address: int, is_print: bool):
     """
     Fungsi untuk membuat dummy data tabel buyer_address
     headers:
@@ -108,10 +111,12 @@ def create_buyer_address_table(n_buyer_address: int, is_print: bool):
         - address
         - zip_code
     args:
+        - buyer (dict): tabel buyer
+        - city (dict): tabel city
         - n_buyer_address (int): jumlah buyer address yang ingin dibuat
         - is_print (bool): jika True akan menampilkan hasil data
     return:
-        - table (dict): data dalam bentuk tabel
+        - buyer_address (dict): data dalam bentuk tabel
     """
     # Membuat kolom-kolom tabel buyer_address dengan masing-masing data dummy
     buyer_address = {}
@@ -127,7 +132,7 @@ def create_buyer_address_table(n_buyer_address: int, is_print: bool):
     
     return buyer_address
 
-def create_ads_table(n_ads: int, is_print: bool):
+def create_ads_table(product: dict, seller: dict, n_ads: int, is_print: bool):
     """
     Fungsi untuk membuat dummy data tabel ads
     headers:
@@ -140,10 +145,12 @@ def create_ads_table(n_ads: int, is_print: bool):
         - price
         - created_at
     args:
+        - product (dict): tabel product
+        - seller (dict): tabel seller
         - n_ads (int): jumlah ads yang ingin dibuat
         - is_print (bool): jika True akan menampilkan hasil data
     return:
-        - table (dict): data dalam bentuk tabel
+        - ads (dict): data dalam bentuk tabel
     """
     # Membuat kolom-kolom tabel ads dengan masing-masing data dummy
     ads = {}
@@ -165,7 +172,7 @@ def create_ads_table(n_ads: int, is_print: bool):
     
     return ads
 
-def create_bids_table(n_bids: int, is_print: bool):
+def create_bids_table(ads: dict, buyer: dict, n_bids: int, is_print: bool):
     """
     Fungsi untuk membuat dummy data tabel bids
     headers:
@@ -176,10 +183,12 @@ def create_bids_table(n_bids: int, is_print: bool):
         - status
         - created_at
     args:
+        - ads (dict): tabel ads
+        - buyer (dict): tabel buyer
         - n_bids (int): jumlah bids yang ingin dibuat
         - is_print (bool): jika True akan menampilkan hasil data
     return:
-        - table (dict): data dalam bentuk tabel
+        - bids (dict): data dalam bentuk tabel
     """
     # Membuat kolom-kolom tabel bids dengan masing-masing data dummy
     bids = {}
