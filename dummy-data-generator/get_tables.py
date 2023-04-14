@@ -18,7 +18,6 @@ def get_city_table(file_name: str, worksheet_name: str, is_print: bool):
     return:
         - table (dict): data dalam bentuk tabel
     """
-
     city_id = []
     name = []
     location = []
@@ -49,17 +48,11 @@ def get_product_table(file_name: str, worksheet_name: str, is_print: bool):
         - year
     arg:
         - file_name (str): nama file excel
+        - worksheet_name (str): nama worksheet
         - is_print (bool): jika True akan menampilkan hasil data
     return:
         - table (dict): data dalam bentuk tabel
     """
-
-    product_id = []
-    brand = []
-    model = []
-    body_type = []
-    year = []
-    
     # menyimpan data hasil pembacaan file excel
     data = read_excel(file_name, worksheet_name)
     

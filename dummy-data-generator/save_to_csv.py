@@ -9,7 +9,6 @@ def save_to_csv(data: dict, nama_file: str):
     return:
         None
     """
-
     # membuka file csv
     with open(file=f"{nama_file}.csv", mode="w", newline="") as csv_file:
         # membuat writer csv

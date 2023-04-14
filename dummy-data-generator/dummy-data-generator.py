@@ -3,8 +3,8 @@ from create_tables import *
 from save_to_csv import *
 
 # menyimpan data dummy ke dalam variabel masing-masing tabel
-city = get_city_table("../city.xlsx", "city", is_print=True)
-product = get_product_table("../car_product.xlsx", "car_product", is_print=True)
+city = get_city_table("../dummy-data/city.xlsx", "city", is_print=True)
+product = get_product_table("../dummy-data/car_product.xlsx", "car_product", is_print=True)
 seller = create_seller_table(200, is_print=True)
 buyer = create_buyer_table(200, is_print=True)
 seller_address = create_seller_address_table(200, is_print=True)
