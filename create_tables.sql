@@ -126,6 +126,6 @@
         buyer_id INT NOT NULL
             REFERENCES buyer(buyer_id) ON DELETE CASCADE,
         amount INT NOT NULL CHECK(amount > 0),
-        status VARCHAR(20) CHECK(status IN ('Sent', 'Not Sent')),
+        status VARCHAR(20) CHECK(status IN ('Sent', 'Cancelled')),
         created_at TIMESTAMP NOT NULL
     );

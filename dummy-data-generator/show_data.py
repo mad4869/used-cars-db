@@ -8,7 +8,6 @@ def show_data(table: dict):
     return:
         None
     """
-    
     tab = tabulate(tabular_data=table,
                     headers=table.keys(),
                     tablefmt="psql",
