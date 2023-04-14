@@ -25,21 +25,14 @@ def read_excel(file_name: str, worksheet_name: str):
     for row in worksheet.iter_rows(min_row=2, values_only=True):
         row_data = {}
 
-        print(row)
-
-        # Memasangkan key and value
+        # Memasangkan key and value item sesuai kolom
         for item in range(len(headers)):
             key = headers[item]
             value = row[item]
 
             row_data[key] = value
 
-        print(row_data)
-
+        # Memasukkan dictionary ke list data
         data.append(row_data)
 
-    print(data)
-
     return data
-
-read_excel('../dummy-data/car_product.xlsx', 'car_product')
