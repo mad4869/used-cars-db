@@ -48,3 +48,23 @@ i. bids: tabel yang menyimpan informasi tentang penawaran harga dari pembeli -->
 - Creating Field Name and Data Type
 
 ![Field name dan data type untuk tiap tabel](https://i.imgur.com/K5cpgsr.jpg)
+
+- Determine Candidate Keys
+
+![Candidate keys untuk tiap tabel](https://i.imgur.com/0LAOEzG.jpg)
+
+- Determine Primary Keys
+
+![Primary keys untuk tiap tabel](https://i.imgur.com/0T9gkU2.jpg)
+
+- Determine Table Relationships
+
+![Relationship antar tabel](https://i.imgur.com/ayNtUee.jpg)
+
+- Determine Business Rule
+
+![Business rule untuk tiap tabel](https://i.imgur.com/ShsbpFQ.jpg)
+
+- Entity Relationship Diagram
+
+![Entity Relationship Diagram](https://i.imgur.com/GYIfzDV.jpg)
