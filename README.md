@@ -69,7 +69,7 @@ i. bids: tabel yang menyimpan informasi tentang penawaran harga dari pembeli -->
 
 ![Entity Relationship Diagram](https://i.imgur.com/GYIfzDV.jpg)
 
-# Creating the Tables
+# Implementing the Design
 Tabel dibuat di dalam database PostgreSQL dengan menggunakan syntax Data Definition Language (DDL) berikut:
 ```
     -- TABLE 1 - seller
