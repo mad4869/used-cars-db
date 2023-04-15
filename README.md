@@ -595,7 +595,6 @@ Query:
         VALUES(21, 42, 7, 185500000, 'Sent', CURRENT_TIMESTAMP)
 ```
 Output: <br> Sebelum insert data:
-![Output transactional query 2 sebelum insert data](https://i.imgur.com/RiuTIuE.png)
 ![Output transactional query 2 sebelum insert data](https://i.imgur.com/VjSyibe.png)
 Setelah insert data:
 ![Output transactional query 2 setelah insert data](https://i.imgur.com/ThsG7jq.png)
@@ -816,7 +815,7 @@ Query:
 Output:
 ![Output analytical query 4](https://i.imgur.com/GEHWk7m.png)
 
-**5. Membuat window function rata-rata harga bid sebuah merk dan model mobil selama 6 bulan terakhir.**
+**5. Membuat window function rata-rata harga bid sebuah merk dan model mobil selama 6 bulan terakhir**
 
 Misalnya mobil *Toyota Yaris* <br> Query:
 ```
