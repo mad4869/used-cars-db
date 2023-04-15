@@ -159,7 +159,7 @@ Tabel dibuat di dalam database PostgreSQL dengan menggunakan syntax Data Definit
 
 # Populating the Database
 
-Database ini menggunakan dummy dataset untuk mengisi data di dalam masing-masing tabel. Dummy dataset didapatkan dari sumber yang telah disediakan tim Pacmann dalam bentuk file Excel, maupun digenerate dengan menggunakan library `Faker` <br> Semua dummy data dikonversi ke dalam file CSV, lalu diimport ke dalam database menggunakan import tool pgAdmin 4.
+Database ini menggunakan dummy dataset untuk mengisi data di dalam masing-masing tabel. Dummy dataset didapatkan dari sumber yang telah disediakan tim Pacmann dalam bentuk file Excel, maupun digenerate dengan menggunakan library `Faker` <br> Semua dummy data dikonversi ke dalam file CSV, lalu diimport ke dalam PostgreSQL database menggunakan import tool pgAdmin 4.
 
 **read_excel**
 
