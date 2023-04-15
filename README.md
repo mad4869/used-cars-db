@@ -26,23 +26,12 @@ Di website mobil bekas ini, user yang mendaftarkan diri sebagai seller dapat men
 
 **1. Mission Statement**
 
-<!-- Untuk memenuhi kebutuhan dari website mobil bekas ini, ada tiga hal utama yang dicakup dalam desain database: <br> -->
-<!-- a. Mengelola user yang mendaftarkan diri pada website sebagai seller maupun buyer. <br>
-b. Mengelola produk yang ditawarkan seller melalui iklan pada marketplace. <br>
-c. Mengelola penawaran harga yang disubmit buyer. -->
 ![Mission statement untuk database design website mobil bekas](https://i.imgur.com/tYVyQGL.jpg)
 
 **2. Creating Table Structures**
 
-- Determine the subjects <br>
-<!-- a. seller: tabel yang menyimpan data penjual <br>
-b. buyer: tabel yang menyimpan data pembeli <br>
-c. seller_address: tabel yang menyimpan detail alamat penjual <br>
-d. buyer_address: tabel yang menyimpan detail alamat pembeli <br>
-e. city: tabel yang menyimpan detail kota <br>
-f. ads: tabel yang menyimpan informasi tentang iklan yang ditayangkan penjual <br>
-g. products: tabel yang menyimpan informasi tentang produk yang ditawarkan via iklan <br>
-i. bids: tabel yang menyimpan informasi tentang penawaran harga dari pembeli -->
+- Determine the objects <br>
+
 ![Table structures untuk database website mobil bekas](https://i.imgur.com/wFobmuI.jpg)
 
 - Creating Field Name and Data Type
