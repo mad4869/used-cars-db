@@ -568,4 +568,303 @@ Hasil akhirnya adalah 8 file CSV yang akan diimport ke dalam tabel-tabel di Post
 
 # Database Backup
 
-Setelah semua tabel terisi, dilakukan backup agar proses restore database dapat dilakukan apabila ada kejadian tak terduga. Data backup disimpan di dalam `backup.sql`
+Setelah semua tabel terisi, dilakukan backup agar proses restore database dapat dilakukan apabila ada kejadian tak terduga. Data backup disimpan di dalam file `backup.sql`
+
+# Transactional Query
+
+**1. Mencari mobil keluaran 2015 ke atas**
+
+Query:
+```
+    SELECT 
+        ad_id,
+		product_id, 
+		brand, 
+		model, 
+		year, 
+        price 
+	FROM 
+        ads
+	INNER JOIN 
+        products
+		USING(product_id)
+	WHERE 
+		year >= 2015
+	ORDER BY 
+		year ASC,
+		ad_id ASC
+```
+Output:
+![Output transactional query 1](https://i.imgur.com/mDq74CJ.png)
+
+**2. Menambahkan satu data bid produk baru**
+
+Query:
+```
+    INSERT INTO 
+        bids(bid_id, ad_id, buyer_id, amount, status, created_at) 
+        VALUES(21, 42, 7, 185500000, 'Sent', CURRENT_TIMESTAMP)
+```
+Output: <br> Sebelum insert data:
+![Output transactional query 2 sebelum insert data](https://i.imgur.com/RiuTIuE.png)
+![Output transactional query 2 sebelum insert data](https://i.imgur.com/VjSyibe.png)
+Setelah insert data:
+![Output transactional query 2 setelah insert data](https://i.imgur.com/ThsG7jq.png)
+
+**3. Melihat semua mobil yg dijual 1 akun dari yg paling baru**
+
+Misalnya dari akun dengan *seller_id = 11* <br> Query:
+```
+    SELECT 
+		product_id, 
+		brand, 
+		model, 
+		year, 
+		price, 
+		created_at 
+	FROM 
+		ads 
+	INNER JOIN 
+		products
+		USING(product_id)
+	WHERE 
+		seller_id = 11
+	ORDER BY 
+		created_at DESC
+```
+Output:
+![Output transactional query 3](https://i.imgur.com/MqVVkw7.png)
+
+**4. Mencari mobil bekas yang termurah berdasarkan keyword**
+
+Misalnya dengan keyword *"Yaris"* <br> Query:
+```
+    SELECT
+		ad_id,
+		product_id, 
+		brand, 
+		model, 
+		year, 
+		price
+	FROM 
+		ads 
+	INNER JOIN 
+		products
+		USING(product_id)
+	WHERE 
+		model ILIKE '%Yaris%'
+	ORDER BY 
+		price ASC
+```
+Output:
+![Output transactional query 4](https://i.imgur.com/HhCo4lG.png)
+
+**5. Mencari mobil bekas yang terdekat berdasarkan sebuah id kota**
+
+*Perhitungan jarak dapat dihitung menggunakan rumus jarak euclidean berdasarkan latitude dan longitude*
+
+Misalnya mobil terdekat dengan *city_id = 3173* <br> Query:
+```
+    -- a. Membuat fungsi untuk menyimpan formula haversine
+    CREATE FUNCTION haversine_distance(point_a POINT, point_b POINT)
+    RETURNS float 
+    LANGUAGE plpgsql
+    
+    AS 
+    $$
+    DECLARE
+        lon_a float := radians(point_a[0]);
+        lat_a float := radians(point_a[1]);
+        lon_b float := radians(point_b[0]);
+        lat_b float := radians(point_b[1]);
+	
+        d_lon float := lon_b - lon_a;
+        d_lat float := lat_b - lat_a;
+        a float;
+        c float;
+        r float := 6371;
+        jarak float;
+    BEGIN
+        -- haversine formula
+        a := sin(d_lat/2)^2 + cos(lat_a) * cos(lat_b) * sin(d_lon/2)^2;
+        c := 2 * asin(sqrt(a));
+        jarak := r * c;
+        
+        RETURN jarak;
+    END
+    $$
+    -- b. Mencari jarak antar dua kota dengan menggunakan formula haversine
+	SELECT
+		product_id, 
+        brand, 
+        model, 
+        year, 
+        price,
+        haversine_distance(location, (SELECT location FROM city WHERE city_id = 3173)) AS distance 
+	FROM
+		ads
+	INNER JOIN
+		products
+		USING(product_id)
+	LEFT JOIN
+		seller_address
+		USING(seller_id)
+	LEFT JOIN
+		city
+		USING(city_id)
+    ORDER BY 
+        6 ASC, 
+        1 ASC
+```
+Output:
+![Output transactional query 5](https://i.imgur.com/ITFaA4h.png)
+
+# Analytical Query
+
+**1. Ranking popularitas model mobil berdasarkan jumlah bid**
+
+Query:
+```
+    SELECT 
+		model, 
+		COUNT(product_id) AS count_product,
+		COUNT(bid_id) AS count_bid
+	FROM 
+        ads
+	INNER JOIN 
+        products
+		USING(product_id)
+	LEFT JOIN
+		bids
+		USING(ad_id)
+	GROUP BY 
+		model
+	ORDER BY
+		count_bid DESC
+```
+Output:
+![Output analytical query 1](https://i.imgur.com/rkUCJfa.png)
+
+**2. Membandingkan harga mobil berdasarkan harga rata-rata per kota**
+
+Query:
+```
+    SELECT 
+		name AS nama_kota,
+		brand,
+		model,
+		year,
+		price,
+		AVG(price) OVER(PARTITION BY name) AS avg_car_city
+	FROM 
+        city
+	INNER JOIN
+		seller_address
+		USING(city_id)
+	INNER JOIN
+		ads
+		USING(seller_id)
+	LEFT JOIN
+		products
+		USING(product_id)
+	ORDER BY
+		6 ASC, 
+        5 ASC
+```
+Output:
+![Output analytical query 2](https://i.imgur.com/PXLWhIB.png)
+
+**3. Dari penawaran suatu model mobil, cari perbandingan tanggal user melakukan bid dengan bid selanjutnya beserta harga tawar yang diberikan**
+
+Misalnya bid untuk model *Toyota Yaris* <br> Query:
+```
+    SELECT 
+        model,
+        buyer_id,
+        FIRST_VALUE(bids.created_at) OVER(PARTITION BY buyer_id) AS first_bid_date,
+        LEAD(bids.created_at) OVER(PARTITION BY buyer_id) AS next_bid_date,
+        FIRST_VALUE(amount) OVER(PARTITION BY buyer_id) AS first_bid_price,
+        LEAD(amount) OVER(PARTITION BY buyer_id) AS next_bid_price
+    FROM 
+        bids
+    INNER JOIN
+        ads
+        USING(ad_id)
+    LEFT JOIN
+        products
+        USING(product_id)
+    WHERE
+        model = 'Toyota Yaris'
+    ORDER BY
+        3 ASC
+```
+Output:
+![Output analytical query 3](https://i.imgur.com/XAtsa7U.png)
+
+**4. Membandingkan persentase perbedaan rata-rata harga mobil berdasarkan modelnya dan rata-rata harga bid yang ditawarkan oleh customer pada 6 bulan terakhir**
+
+Query:
+```
+    SELECT
+        model,
+        AVG(price) AS avg_price,
+        AVG(amount) AS avg_bid_6month,
+        AVG(price) - AVG(amount) AS difference,
+        ((AVG(price) - AVG(amount)) / AVG(price))::float * 100 AS difference_percent
+    FROM
+        bids
+    INNER JOIN
+        ads
+        USING(ad_id)
+    LEFT JOIN
+        products
+        USING(product_id)
+    WHERE
+        bids.created_at >= CURRENT_TIMESTAMP - INTERVAL '6 months'
+    GROUP BY
+        model
+```
+Output:
+![Output analytical query 4](https://i.imgur.com/GEHWk7m.png)
+
+**5. Membuat window function rata-rata harga bid sebuah merk dan model mobil selama 6 bulan terakhir.**
+
+Misalnya mobil *Toyota Yaris* <br> Query:
+```
+    WITH bids_yaris AS (	
+	SELECT
+		brand,
+		model,
+		bids.created_at,
+		amount
+    FROM
+        bids
+    INNER JOIN
+        ads
+        USING(ad_id)
+    LEFT JOIN
+        products
+        USING(product_id)
+	WHERE
+		model = 'Toyota Yaris'
+	)
+	SELECT
+		DISTINCT brand,
+		model,
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '6 months') AS m_min_6,
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '5 months') AS m_min_5,
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '4 months') AS m_min_4,
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '3 months') AS m_min_3,
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '2 months') AS m_min_2,
+		(SELECT AVG(amount) FROM bids_yaris 
+                WHERE created_at >= CURRENT_TIMESTAMP - interval '1 months') AS m_min_1
+	FROM
+		bids_yaris
+```
+Output:
+![Output analytical query 5](https://i.imgur.com/0HX8v7Y.png)
