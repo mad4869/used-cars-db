@@ -576,7 +576,7 @@ Setelah semua tabel terisi, dilakukan backup agar proses restore database dapat 
 
 Query:
 ```
-    SELECT 
+    SELECT
         ad_id,
 		product_id, 
 		brand, 
@@ -615,7 +615,7 @@ Setelah insert data:
 
 Misalnya dari akun dengan *seller_id = 11* <br> Query:
 ```
-    SELECT 
+    SELECT
 		product_id, 
 		brand, 
 		model, 
@@ -641,7 +641,7 @@ Misalnya dengan keyword *"Yaris"* <br> Query:
 ```
     SELECT
 		ad_id,
-		product_id, 
+		product_id,
 		brand, 
 		model, 
 		year, 
@@ -695,7 +695,7 @@ Misalnya mobil terdekat dengan *city_id = 3173* <br> Query:
     $$
     -- b. Mencari jarak antar dua kota dengan menggunakan formula haversine
 	SELECT
-		product_id, 
+		product_id,
         brand, 
         model, 
         year, 
@@ -725,7 +725,7 @@ Output:
 
 Query:
 ```
-    SELECT 
+    SELECT
 		model, 
 		COUNT(product_id) AS count_product,
 		COUNT(bid_id) AS count_bid
@@ -749,7 +749,7 @@ Output:
 
 Query:
 ```
-    SELECT 
+    SELECT
 		name AS nama_kota,
 		brand,
 		model,
@@ -831,7 +831,7 @@ Output:
 
 Misalnya mobil *Toyota Yaris* <br> Query:
 ```
-    WITH bids_yaris AS (	
+    WITH bids_yaris AS (
 	SELECT
 		brand,
 		model,
