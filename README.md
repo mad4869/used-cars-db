@@ -565,17 +565,17 @@ Setelah semua tabel terisi, dilakukan backup agar proses restore database dapat 
 
 Query:
 ```
-    SELECT
-        ad_id,
+   	SELECT
+        	ad_id,
 		product_id, 
 		brand, 
 		model, 
 		year, 
-        price 
+        	price 
 	FROM 
-        ads
+        	ads
 	INNER JOIN 
-        products
+        	products
 		USING(product_id)
 	WHERE 
 		year >= 2015
@@ -595,7 +595,6 @@ Query:
         VALUES(21, 42, 7, 185500000, 'Sent', CURRENT_TIMESTAMP)
 ```
 Output: <br> Sebelum insert data:
-![Output transactional query 2 sebelum insert data](https://i.imgur.com/RiuTIuE.png)
 ![Output transactional query 2 sebelum insert data](https://i.imgur.com/VjSyibe.png)
 Setelah insert data:
 ![Output transactional query 2 setelah insert data](https://i.imgur.com/ThsG7jq.png)
@@ -604,7 +603,7 @@ Setelah insert data:
 
 Misalnya dari akun dengan *seller_id = 11* <br> Query:
 ```
-    SELECT
+    	SELECT
 		product_id, 
 		brand, 
 		model, 
@@ -628,7 +627,7 @@ Output:
 
 Misalnya dengan keyword *"Yaris"* <br> Query:
 ```
-    SELECT
+    	SELECT
 		ad_id,
 		product_id,
 		brand, 
@@ -685,11 +684,11 @@ Misalnya mobil terdekat dengan *city_id = 3173* <br> Query:
     -- b. Mencari jarak antar dua kota dengan menggunakan formula haversine
 	SELECT
 		product_id,
-        brand, 
-        model, 
-        year, 
-        price,
-        haversine_distance(location, (SELECT location FROM city WHERE city_id = 3173)) AS distance 
+        	brand, 
+        	model, 
+        	year, 
+        	price,
+        	haversine_distance(location, (SELECT location FROM city WHERE city_id = 3173)) AS distance 
 	FROM
 		ads
 	INNER JOIN
@@ -701,9 +700,9 @@ Misalnya mobil terdekat dengan *city_id = 3173* <br> Query:
 	LEFT JOIN
 		city
 		USING(city_id)
-    ORDER BY 
-        6 ASC, 
-        1 ASC
+    	ORDER BY 
+        	6 ASC, 
+        	1 ASC
 ```
 Output:
 ![Output transactional query 5](https://i.imgur.com/ITFaA4h.png)
@@ -714,14 +713,14 @@ Output:
 
 Query:
 ```
-    SELECT
+    	SELECT
 		model, 
 		COUNT(product_id) AS count_product,
 		COUNT(bid_id) AS count_bid
 	FROM 
-        ads
+        	ads
 	INNER JOIN 
-        products
+        	products
 		USING(product_id)
 	LEFT JOIN
 		bids
@@ -738,7 +737,7 @@ Output:
 
 Query:
 ```
-    SELECT
+    	SELECT
 		name AS nama_kota,
 		brand,
 		model,
@@ -746,7 +745,7 @@ Query:
 		price,
 		AVG(price) OVER(PARTITION BY name) AS avg_car_city
 	FROM 
-        city
+        	city
 	INNER JOIN
 		seller_address
 		USING(city_id)
@@ -758,7 +757,7 @@ Query:
 		USING(product_id)
 	ORDER BY
 		6 ASC, 
-        5 ASC
+        	5 ASC
 ```
 Output:
 ![Output analytical query 2](https://i.imgur.com/PXLWhIB.png)
@@ -816,16 +815,16 @@ Query:
 Output:
 ![Output analytical query 4](https://i.imgur.com/GEHWk7m.png)
 
-**5. Membuat window function rata-rata harga bid sebuah merk dan model mobil selama 6 bulan terakhir.**
+**5. Membuat window function rata-rata harga bid sebuah merk dan model mobil selama 6 bulan terakhir**
 
 Misalnya mobil *Toyota Yaris* <br> Query:
 ```
     WITH bids_yaris AS (
-	SELECT
-		brand,
-		model,
-		bids.created_at,
-		amount
+    SELECT
+	brand,
+	model,
+	bids.created_at,
+	amount
     FROM
         bids
     INNER JOIN
