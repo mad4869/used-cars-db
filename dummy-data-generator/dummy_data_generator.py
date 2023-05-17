@@ -12,9 +12,17 @@ buyer_address = create_buyer_address_table(buyer, city, 225, is_print=True)
 ads = create_ads_table(product, seller, 100, is_print=True)
 bids = create_bids_table(ads, buyer, 20, is_print=True)
 
-list_tables = [city, product, seller, buyer, seller_address, buyer_address, ads, bids]
-name_tables = ['city', 'product', 'seller', 'buyer', 'seller_address', 'buyer_address', 'ads', 'bids']
+tables = {
+    "city": city,
+    "product": product,
+    "seller": seller,
+    "buyer": buyer,
+    "seller_address": seller_address,
+    "buyer_address": buyer_address,
+    "ads": ads,
+    "bids": bids,
+}
 
 # eksekusi fungsi untuk membuat file csv tiap tabel
-for table, name in zip(list_tables, name_tables):
-    save_to_csv(table, name)
+for table_name, table in tables.items():
+    save_to_csv(table, table_name)
