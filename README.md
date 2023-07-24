@@ -515,27 +515,27 @@ Query:
     END
     $$
     -- b. Mencari jarak antar dua kota dengan menggunakan formula haversine
- SELECT
+SELECT
     product_id,
     brand, 
     model, 
     year, 
     price,
     haversine_distance(location, (SELECT location FROM city WHERE city_id = 3173)) AS distance 
- FROM
+FROM
   ads
- INNER JOIN
+INNER JOIN
   products
   USING(product_id)
- LEFT JOIN
+LEFT JOIN
   seller_address
   USING(seller_id)
- LEFT JOIN
+LEFT JOIN
   city
   USING(city_id)
-     ORDER BY 
-         6 ASC, 
-         1 ASC
+ORDER BY 
+    6 ASC, 
+    1 ASC
 ```
 
 Output:
