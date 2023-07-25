@@ -481,7 +481,7 @@ Output:
 
 ### 5. Find the nearest used car based on a city id
 
-_Distance calculations can be calculated using the euclidean distance formula based on latitude and longitude_
+#### Distance calculations can be calculated using the euclidean distance formula based on latitude and longitude
 
 Query:
 
@@ -694,3 +694,7 @@ WITH bids_yaris AS (
 
 Output:
 ![Output analytical query 5](docs/queries/analytical-query-5.png)
+
+## Conclusion
+
+That concludes the overview of the process for designing PostgreSQL database. Additionally, it is important to implement a backup and restore mechanism to ensure data integrity in case of any issues or data loss.
